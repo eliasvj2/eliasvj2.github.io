@@ -1,0 +1,114 @@
+/* modal window part 1 */
+.box1 > div {
+  background-color: lightblue;
+  text-decoration: none;
+  border: 2px solid purple;
+  border-radius: 4px;
+  padding: 4%;
+  margin: 3%;
+}
+/* modal window part 2 */
+.mdl {
+  background-color: rgb(160, 160, 206);
+  /* height: 300px; */
+  width: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  pointer-events: none;
+  display: flex;
+}
+.md2 {
+  background-color: rgb(165, 206, 160);
+  /* height: 300px; */
+  width: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  pointer-events: none;
+  display: flex;
+}
+.md2:target {
+  opacity: 1;
+  pointer-events: all;
+}
+.mdl:target {
+  opacity: 1;
+  pointer-events: all;
+}
+.msgblock {
+  background-color: orange;
+  width: 50%;
+  margin: auto;
+  height: 300px;
+}
+.msgblock img {
+  width: 40%;
+  margin-left: 20%;
+  margin-right: auto;
+  display: block;
+}
+.msgblock p {
+  text-align: center;
+  margin-left: 10%;
+  width: 75%;
+}
+.msgblock h1,
+.msgblock2 h1 {
+  color: white;
+  background-color: rgb(214, 152, 173);
+}
+.msgblock p {
+  text-align: center;
+
+  background-color: rgb(214, 152, 173);
+}
+.msgblock2 {
+  background-color: lightblue;
+  width: 50%;
+  margin: auto;
+  height: 300px;
+}
+.msgblock2 p {
+  background-color: rgb(214, 152, 173);
+  text-align: center;
+  margin-left: 10%;
+  width: 75%;
+}
+.msgblock2 img {
+  width: 40%;
+  margin-left: 20%;
+  margin-right: auto;
+  display: block;
+}
+
+.close {
+  text-decoration: none;
+  border: 2px solid black;
+  border-radius: 42px;
+  padding: 1%;
+  float: right;
+}
+.box1 {
+  display: flex;
+}
+.btn {
+  text-decoration: none;
+  margin-left: 20%;
+  width: 90%;
+}
+.box1 p {
+  height: 15%;
+  border-radius: 42px;
+  width: 50%;
+  padding-top: 5%;
+  text-align: center;
+  background-color: orange;
+  color: white;
+}
