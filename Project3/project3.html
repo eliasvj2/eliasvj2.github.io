@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project 3</title>
+    <link rel="stylesheet" href="./project3.css" />
+  </head>
+  <body>
+    <h1 class="header">GUESS MY NUMBER</h1>
+    <h2>Guess the number bewteen 1 and 100</h2>
+    <div class="box">
+      <div class="box-flex">
+        <div class="box1">
+          <p>Score: <span id="score"></span></p>
+          <p>High Score: <span id="highScore"></span></p>
+        </div>
+
+        <div class="box2"><button id="reset">Reset</button></div>
+      </div>
+      <div id="box-flex2" class="box-flex2">
+        <div class="inputTxt">
+          <input type="text" id="userInput" placeholder="Guess the number" />
+          <button id="checkInput">Check</button>
+        </div>
+        <div>
+          <p id="result" style="color: white">Guess a number</p>
+          <p id="secret_number"></p>
+          <button id="tryAgain" style="visibility: hidden">Play Again</button>
+        </div>
+      </div>
+      <div class="box-bottom">
+        <p>Guess History:</p>
+        <p id="history"></p>
+      </div>
+    </div>
+
+    <script src="./project3.js"></script>
+  </body>
+</html>
