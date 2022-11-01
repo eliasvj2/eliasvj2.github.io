@@ -1,0 +1,63 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.box1 {
+  width: 70%;
+  height: 50;
+  background-color: rgb(245, 155, 222);
+  border: 2px solid rgb(10, 8, 8);
+  margin-left: 15%;
+  display: flex;
+  
+}
+.box2 {
+  align-items: flex-start;
+  width: 50%;
+  padding: 2%;
+  overflow: auto;
+}
+.container >p{
+  font-size: 3vw;
+}
+.img1 {
+  width: 70%;
+  margin-left: 20%;
+  border: 2px solid blue;
+}
+.box2-p {
+  margin-right: 10%;
+}
+.box1 p {
+  color: white;
+}
+.box3 {
+  justify-content: left;
+  width: 50%;
+}
+.img2 {
+  width: 70%;
+  border: 2px solid blue;
+  margin-left: 10%;
+}
+.contact {
+  margin-left: 5%;
+}
+.hyper {
+  margin-right: 2%;
+}
+.heading {
+  font-family: cursive;
+}
+nav{
+  display: flex;
+  justify-content: center;
+}
+nav > a{
+  
+  padding: 2%;
+}
+a{
+  display: inline;
+}
