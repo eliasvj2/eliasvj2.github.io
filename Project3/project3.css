@@ -9,37 +9,7 @@ h2 {
 h1 {
   text-shadow: 2px 1px white;
 }
-.box {
-  background-color: rgba(243, 231, 231, 0.8);
-  width: 60%;
-  margin-left: 20%;
-  border-radius: 5%;
-}
-.box-flex {
-  display: flex;
-}
-.box1 {
-  margin: 3%;
-  margin-right: 60%;
-  background-color: rgb(236, 69, 139);
-  border-radius: 15%;
-  width: 15%;
-}
-.box2 {
-  margin: 3%;
-}
-.box2 p {
-  padding: 100%;
-  background-color: rgb(236, 69, 139);
-  border-radius: 20%;
-}
-.box-flex2 {
-  background-color: rgba(212, 153, 153, 0.8);
-  padding: 15%;
-  margin: 15%;
 
-  border-radius: 15%;
-}
 .header {
   animation: changeColor 10s linear infinite;
 }
@@ -58,17 +28,8 @@ h1 {
     color: red;
   }
 }
-.box-bottom {
-  margin-left: 30%;
-  border-radius: 10%;
-  background-color: aqua;
-  width: 25%;
-}
-#reset {
-  height: 40px;
-  background-color: rgb(236, 69, 139);
-  border-radius: 15%;
-}
+
+
 #checkInput {
   height: 40px;
   background-color: rgb(35, 175, 35);

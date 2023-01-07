@@ -24,7 +24,7 @@ console.log(secret_number);
 document.getElementById('userInput').style.visibility = 'visible';
  document.getElementById('checkInput').style.visibility = 'visible';
   document.getElementById('tryAgain').style.visibility = 'hidden';
-  document.getElementById("box-flex2").style.backgroundColor = "rgba(212, 153, 153, 0.8)";
+  
   //make the array empty
   history =[];
   //display the history
@@ -79,12 +79,14 @@ if(isNaN(user) || user == ""){
 
 else if(score == 1){
   document.getElementById("score").innerHTML= 0;
+   
   document.getElementById('result').innerHTML = "<h2>Unfortunately You Lost the Game</h2> <br><p>Don't give up and Try again <br> My secret number was "+ secret_number+"</p>";
   document.getElementById('userInput').style.visibility = 'hidden';
   document.getElementById('highScore').innerHTML = highScore;
   document.getElementById('checkInput').style.visibility = 'hidden';
   document.getElementById('tryAgain').style.visibility = 'visible';
-  document.getElementById("box-flex2").style.backgroundColor = "lightgreen";
+  
+  
   //display the history
 document.getElementById('history').innerHTML = history;
 }
@@ -136,7 +138,7 @@ else if ( user == secret_number && score >0){
  document.getElementById('userInput').style.visibility = 'hidden';
  document.getElementById('checkInput').style.visibility = 'hidden';
   document.getElementById('tryAgain').style.visibility = 'visible';
-  document.getElementById("box-flex2").style.backgroundColor = "lightgreen";
+ 
 
 }
 
