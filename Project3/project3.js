@@ -1,6 +1,6 @@
 // secret number
 let secret_number = Math.trunc((Math.random()*100)+1);
-
+console.log(secret_number);
 //display secret number
 console.log(secret_number);
 //create previous score
@@ -68,6 +68,7 @@ function checkUserInput(){
  //get the user input
  let user = document.getElementById("userInput").value;
 
+ score--;
  
  
 //Check if the user input is a number
@@ -77,7 +78,7 @@ if(isNaN(user) || user == ""){
   document.getElementById('result').innerHTML = "Enter a number in the range of 1 to 100.";
 }
 
-else if(score == 1){
+else if(score == 0 && user != secret_number){
   document.getElementById("score").innerHTML= 0;
    
   document.getElementById('result').innerHTML = "<h2>Unfortunately You Lost the Game</h2> <br><p>Don't give up and Try again <br> My secret number was "+ secret_number+"</p>";
@@ -113,19 +114,19 @@ document.getElementById('history').innerHTML = history;
 //Check if the number is too high or too small
 if(user > secret_number && score >0){
  //decrement by 1
-score--;
+
 //display
 document.getElementById('score').innerHTML = score;
  document.getElementById('result').innerHTML = "Your number is too high.";
  
 } else if( user < secret_number && score >0){
    //decrement by 1
-score --;
+
 //display
 document.getElementById('score').innerHTML = score;
 document.getElementById('result').innerHTML = "Your number is too small.";
 }
-else if ( user == secret_number && score >0){
+else if ( user == secret_number && score >=0){
  document.getElementById('result').innerHTML = "<h2 class='win'>Congratulations</h2><p class='win'>Your guess was correct. "+secret_number+" is my secret number. </p><h2 class='win'>Your Score: "+ score+"</h2>";
  highScore = score;
   if(previousHighScore > highScore){
